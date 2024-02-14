@@ -1,0 +1,18 @@
+POST http://localhost:2110/ability/createability
+Content-Type: application/json
+
+{
+    "name" : "Asd",
+    "description" : "Asd",
+    "typeability" : "Asd"
+}
+###
+POST http://localhost:2110/agent/createagent
+Content-Type: application/json
+
+{
+    "nomAgent" : "Asd",
+    "descriptionAgent" : "Asd",
+    "imageAgent" : "Asd",
+    "abilite" : ["65cb826bac42c32c0653954d"]
+}
