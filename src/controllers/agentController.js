@@ -16,7 +16,7 @@ const CreateAgent = async (req, res) => {
 
 const getallagents = async (req, res) => {
   try {
-    const agents = await Agent.find().populate("Ability"); // va chercher les agents et va renvoyer les agents qui sont dans la base de données
+const agents = await Agent.find().populate("abilite") ; // va chercher les agents et va renvoyer les agents qui sont dans la base de données / .populate pour remplacer les id dans la base de donner
     res.json(agents);
   } catch (error) {
     res.status(500).send(error.message);

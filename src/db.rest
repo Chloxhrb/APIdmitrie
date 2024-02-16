@@ -1,3 +1,6 @@
+//postman directement integrer sur vsc
+
+
 POST http://localhost:2110/ability/createability
 Content-Type: application/json
 
